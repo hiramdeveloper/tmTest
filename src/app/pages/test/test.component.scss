@@ -1,0 +1,8 @@
+:host ::ng-deep {
+    .blue { background-color: blue; }
+    .red { background-color: red; }
+    .error { background-color: red; }
+    .btn {
+        margin: 5px;
+    }
+}

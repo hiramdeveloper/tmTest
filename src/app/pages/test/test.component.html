@@ -1,0 +1,8 @@
+<div>
+    <button (click)="getData(country)" *ngFor="let country of countries" type="button" [ngClass]="{
+        'btn': true,
+        'blue': isFirstOpt && firstSelected === country,
+        'red': isSecondOpt && secondSelected === country,
+        'error': isBothCountries && firstSelected === country || secondSelected === country
+    }">{{country}}</button>
+</div>
